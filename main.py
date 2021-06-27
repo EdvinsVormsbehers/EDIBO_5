@@ -52,25 +52,25 @@ while running:
             running = False
         # if keystroke is pressed check whether its right or left
         if event.type == pygame.KEYDOWN:
-            print("A keystroke is pressed")
+            # print("A keystroke is pressed")
             if event.key == pygame.K_LEFT:
                 playerX_change = -0.3
-                print("Left arrow is pressed")
+                # print("Left arrow is pressed")
             if event.key == pygame.K_RIGHT:
                 playerX_change = 0.3
-                print("Right arrow is pressed")
+                # print("Right arrow is pressed")
             if event.key == pygame.K_UP:
                 playerY_change = -0.3
-                print("Up arrow is pressed")
+                # print("Up arrow is pressed")
             if event.key == pygame.K_DOWN:
                 playerY_change = 0.3
-                print("Down arrow is pressed")
+                # print("Down arrow is pressed")
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                print("Keystroke has been realised")
+                # print("Keystroke has been realised")
                 playerX_change = 0
             if event.key == pygame.K_UP or event.key == pygame.K_DOWN:
-                print("Keystroke has been realised")
+                # print("Keystroke has been realised")
                 playerY_change = 0
 
     playerX += playerX_change
